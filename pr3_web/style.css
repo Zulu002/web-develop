@@ -1,0 +1,55 @@
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    transition: background-color 0.3s;
+}
+
+.hovered {
+    background-color: lightgreen;
+}
+
+#backgroundBox {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    border: 1px solid #000;
+}
+
+#submitButton {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: not-allowed;
+}
+
+#submitButton.active {
+    background-color: blue;
+    cursor: pointer;
+}
+
+#hideMe {
+    padding: 20px;
+    background-color: lightcoral;
+    cursor: pointer;
+    text-align: center;
+}
+
+#toggleBox {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 200px; /* Центрирование текста по вертикали */
+    transition: background-color 0.3s;
+}
+
+.active {
+    background-color: lightgreen;
+}
+
+.inactive {
+    background-color: lightcoral;
+}
