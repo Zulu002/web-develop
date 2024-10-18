@@ -61,11 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
         nameCell.textContent = name;
         ageCell.textContent = age;
 
-        // Проверяем возраст и применяем классы
+        // Проверяем возраст и применяем классы для строки
         if (age < 18) {
-            ageInput.classList.add('error'); // Подсвечиваем поле красным
-        } else {
-            ageInput.classList.remove('error'); // Убираем подсветку
+            tableRow.classList.add('error-row'); // Подсвечиваем строку красным
         }
 
         // Добавляем ячейки в строку
@@ -73,13 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
         tableRow.appendChild(ageCell);
 
         // Добавляем строку в таблицу
-        document.getElementById('userTable').querySelector('tbody').appendChild(tableRow);
+        const tableBody = document.getElementById('userTable').querySelector('tbody');
+        tableBody.appendChild(tableRow);
 
         // Очищаем поля формы
         nameInput.value = '';
         ageInput.value = '';
     });
 });
+
 
 //Задача 4.3 Таблица товаров с динамическим обновлением и фильтрацией
 document.addEventListener('DOMContentLoaded', () => {

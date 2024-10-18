@@ -25,20 +25,15 @@ body {
     transform: scale(0.8); /* Уменьшение размера неактивных изображений */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+.error-row {
+    background-color: #ff0000; /* Красный фон для строки с ошибкой */
 }
 table {
+    margin-top: 20px;
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 th, td {
     padding: 10px;
     border: 1px solid #ccc;
-    text-align: left;
-}
-.error {
-    border: 1px solid red;
 }
