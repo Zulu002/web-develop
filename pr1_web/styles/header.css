@@ -1,0 +1,28 @@
+.section_flex {
+    text-align: center;
+}
+
+.section_flex-wrap {
+    display: flex;
+    justify-content: space-between; /* Распределяем первый и последний элемент по краям */
+    align-items: center; /* Выравнивание по вертикали */
+}
+
+.section_flex-wrap-element {
+    padding: 10px;
+    margin: 10px;
+    /* Задайте ширину для элементов, кроме первого и последнего, если это необходимо */
+}
+
+.section_flex-wrap-element_last > img {
+    width: 20px;
+    height: 20px;
+}
+
+.section_flex-wrap-element_first{
+    margin-right: 600px;
+    text-align: left;
+}
+.section_flex-wrap-element_last{
+    margin-left: 600px;
+}
