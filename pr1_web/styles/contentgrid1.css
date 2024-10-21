@@ -1,0 +1,39 @@
+.h1_3cont{
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 0;
+    
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 колонки равной ширины */
+    grid-template-rows:1fr 1fr ; /* 2 строки равной высоты */
+    gap: 10px; /* Отступы между элементами */
+    width: 1300px; /* Ширина контейнера */
+    height: 600px;
+    margin: 50px auto; /* Центрируем контейнер */
+}
+
+.grid-item-1 {
+    background-color: black; /* Цвет фона элемента */
+    grid-column: span 2;
+    
+}
+
+.grid-item-2 {
+    background-color: orange; /* Цвет фона элемента */
+    grid-row: span 2;
+}
+
+.grid-item-3 {
+    background-color: red; /* Цвет фона элемента */
+    grid-row: span 2;
+}
+
+.grid-item-4 {
+    background-color: rebeccapurple; /* Цвет фона элемента */
+    grid-column: span 2;
+}
+

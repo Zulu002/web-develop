@@ -1,0 +1,34 @@
+.flex_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Задает высоту на весь экран */
+    margin: 0;
+    background-color: rgb(43, 40, 40);
+    color: white;
+}
+
+.section_flex_2 {
+    text-align: center; /* Центрируем заголовок */
+}
+
+.section_flex-wrap_2 {
+    display: flex;
+    flex-wrap: wrap; /* Перенос карточек на новую строку при необходимости */
+    justify-content: center; /* Центрируем карточки в строке */
+}
+
+.card {
+    border: 3px solid #ccc; /* Граница карточки */
+    border-radius: 8px; /* Закругление углов */
+    padding: 10px 5px; /* Внутренний отступ */
+    margin: 10px; /* Отступ между карточками */
+    width: 250px; /* Ширина карточки, 5 карточек в строке с учетом отступов */
+
+}
+
+.img_size{
+    width: 130px;
+    height: 130px;
+}
