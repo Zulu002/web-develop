@@ -1,0 +1,361 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+
+/* Основные стили для хедера */
+.header__position {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 1700px;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3E356A;
+}
+
+
+/* Стили для десктопной версии */
+.header__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin: auto;
+    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav {
+    width: 100%;
+    text-align: center;
+}
+
+.header__nav_menu {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.header__nav_menu-item {
+    color: black;
+}
+
+/*Close icon*/
+#imgToClose {
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+
+.header__menu-item {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: auto;
+}
+
+.header__icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header__icon-header__icon--search,
+.header__icon-header__icon--cart {
+    margin: 15px;
+}
+
+
+
+
+
+.main {
+    text-align: center;
+}
+
+.search__title {
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.search__bar {
+    position: relative;
+    width: 650px;
+    margin: 15px auto;
+}
+
+.search__input {
+    width: 100%;
+    height: 42px;
+    padding-left: 50px;
+    border: 2px solid #C5C5C5;
+    border-radius: 30px;
+    outline: none;
+    background: #F8F9FA;
+    color: black;
+    
+}
+
+.search__input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.search__button {
+    position: absolute; 
+    top: 0;
+    left: 0px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: #F8F9FA;
+    border-left: 2px solid #C5C5C5;
+    border-top: 2px solid #C5C5C5;
+    border-bottom: 2px solid #C5C5C5;
+    border-radius: 30px 0 0 30px;
+    cursor: pointer;
+}
+
+.search__tags { 
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+}
+
+.search__tag {
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    box-sizing: border-box; /* Учитывать границы и паддинги в расчетах ширины */
+}
+
+
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /* Уменьшили padding */
+    background-color: #eceaf0;
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.subscribe__content {
+    max-width: 50%;
+    margin: 20px; /* Уменьшили отступы */
+}
+
+.subscribe__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subscribe__text {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.subscribe__form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.subscribe__input {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #9E9C9C;
+}
+
+.subscribe__button {
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 60px;
+    height: 42px;
+    border: none;
+    background: #000000;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.subscribe__image img {
+    max-width: 400px;
+}
+
+
+/* Скрываем модальное окно по умолчанию */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
+}
+
+/* Контент модального окна */
+.modal-content {
+    color: white;
+    font-size: 15px;
+    background-color: #220E43;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%; 
+    max-width: 400px; /* Ограничиваем максимальную ширину */
+    border-radius: 10px;
+}
+
+/* Кнопка для закрытия модального окна */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal__h1{
+    margin: 40px;
+    font-size: 30px;
+}
+
+
+/* Бургер-меню */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: #3E356A;
+}
+
+/* Медиа-запрос для экрана шириной до 768px */
+@media (max-width: 768px) {
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__menu.active {
+        left: 0; /* Меню выезжает слева */
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .header__icons {
+        display: none; /* Скрываем иконки корзины и поиска на мобильных устройствах */
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* Уменьшили padding для мобильных устройств */
+    }
+
+    .subscribe__content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .subscribe__image {
+        order: -1; /* Перемещаем изображение выше контента */
+        margin-bottom: 20px; /* Добавляем отступ под изображением */
+    }
+
+    .subscribe__image img {
+        max-width: 100%;
+    }
+
+    .subscribe__form {
+        width: 100%; /* Делаем форму на всю ширину */
+    }
+}
+
+/* Медиа-запрос для экрана до 768px */
+@media (max-width: 768px) {
+    
+    /* Выравниваем элементы по центру */
+    .header {
+        justify-content: center;
+        position: relative;
+    }
+    
+    /* Центрируем логотип */
+    .header__logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    /* Иконки остаются справа */
+    .header__icons {
+        position: absolute;
+        right: 20px; /* Расположение справа */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+

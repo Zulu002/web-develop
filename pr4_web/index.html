@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body >
+    <div class="header__position">
+        <header class="header">
+            <div class="header__logo">CALIFORNIA</div>
+            <nav class="header__nav">
+                <ul class="header__nav_menu">
+                    <li class="header__nav_menu-item">ALL PRODUCTS</li>
+                    <li class="header__nav_menu-item">SOLUTIONS</li>
+                    <li class="header__nav_menu-item">ABOUT</li>
+                    <li class="header__nav_menu-item">SUPPORT</li>
+                </ul>
+            </nav>
+            <dialog id="burgerMenu">
+                <img src="Group 62.svg" alt="close" width="20px" height="auto" id="imgToClose">
+                <ul class="header__menu">
+                    <li class="header__menu-item">ALL PRODUCTS</li>
+                    <li class="header__menu-item">SOLUTIONS</li>
+                    <li class="header__menu-item">ABOUT</li>
+                    <li class="header__menu-item">SUPPORT</li>
+                </ul>
+            </dialog>
+            <div class="header__icons">
+                <div class="header__icon-header__icon--cart"><img src="img/cart.png" alt=""></div>
+                <div class="header__icon-header__icon--search"><img src="img/magnifying-glass.png" alt=""></div>
+            </div>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    </div>
+    
+
+            <main class="main">
+                <section class="search">
+                    <h1 class="search__title">Looking for anything else?</h1>
+                    <div class="search__bar">
+                        <input type="email" class="search__input" placeholder="Search keyword">
+                        <button class="search__button"><img src="img/magnifying-glass.png"></button>
+                    </div>
+                    <div class="search__tags">
+                        <button class="search__tag">iPhone</button>
+                        <button class="search__tag">Charger</button>
+                        <button class="search__tag">Gift</button>
+                        <button class="search__tag">Google Pixel 3</button>
+                        <button class="search__tag">Keyboard</button>
+                        <button class="search__tag">13 Pro Max</button>
+                        <button class="search__tag">iPhone 12</button>
+                        <button class="search__tag">Laptop</button>
+                        <button class="search__tag">Mobile</button>
+                    </div>
+                </section>
+
+                <section class="subscribe">
+                    <div class="subscribe__content">
+                        <h2 class="subscribe__title">Never miss a thing</h2>
+                        <p class="subscribe__text">Sign up for texts to be notified about our best offers on the perfect gifts.</p>
+                        <div class="subscribe__form">
+                            <input type="email" class="subscribe__input" placeholder="Your email">
+                            <button class="subscribe__button">Sign up</button>
+                        </div>
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h1 class="modal__h1">Вы подписанны!</h1>
+                                
+                                <p>На вашу почту: <span id="user-email"></span> прийдет рассылка</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subscribe__image">
+                        <img src="img/e7169079283a868c992366c5739fb07b.png" alt="Laptop and phones">
+                    </div>
+                </section>
+        
+    
+</body>
+</html>
